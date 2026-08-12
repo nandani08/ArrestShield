@@ -1,0 +1,14 @@
+# Core Dependencies
+torch
+transformers
+faster-whisper
+gliner
+fastapi
+uvicorn
+websockets
+numpy
+pydantic
+scipy
+soundfile
+huggingface_hub
+python-multipart

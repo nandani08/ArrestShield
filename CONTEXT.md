@@ -59,6 +59,6 @@ graph TD
 
 ## Current Project State
 
-*   **Repository Structure**: Initialized with basic workspace structure.
-*   **Dependencies**: Under definition (targeting PyTorch, Transformers, faster-whisper, GLiNER, FastAPI).
-*   **Next Action**: Phase 1 Environment setup and project configuration.
+*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), and package initialization files.
+*   **Dependencies**: Defined in `requirements.txt`.
+*   **Next Action**: Implement the configuration module (`config.py`) to manage environment parameters and thresholds (Task 2).

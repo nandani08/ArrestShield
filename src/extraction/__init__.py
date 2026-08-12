@@ -1,0 +1,1 @@
+# Threat extraction module initialization

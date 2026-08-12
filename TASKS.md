@@ -1,7 +1,7 @@
 # ArrestShield-Live Project Tasks
 
 ## Phase 1: Environment Setup & Project Configuration
-- [ ] **Task 1**: Setup project directory structure, initialize python virtual environment, and construct `requirements.txt` with core libraries (torch, transformers, faster-whisper, gliner, fastapi, uvicorn, websockets, numpy, pydantic).
+- [x] **Task 1**: Setup project directory structure, initialize python virtual environment, and construct `requirements.txt` with core libraries (torch, transformers, faster-whisper, gliner, fastapi, uvicorn, websockets, numpy, pydantic).
 - [ ] **Task 2**: Create basic configuration file `config.py` to manage model parameters, API keys, WebSocket paths, and local thresholds.
 
 ## Phase 2: Live/Streaming Audio ASR Pipeline
