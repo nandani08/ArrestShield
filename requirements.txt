@@ -12,3 +12,5 @@ scipy
 soundfile
 huggingface_hub
 python-multipart
+silero-vad
+torchaudio

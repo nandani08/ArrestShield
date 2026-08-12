@@ -59,6 +59,6 @@ graph TD
 
 ## Current Project State
 
-*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), and package initialization files.
+*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), package initialization files, the configuration module `src/config.py`, and the Voice Activity Detection module `src/asr/vad.py`.
 *   **Dependencies**: Defined in `requirements.txt`.
-*   **Next Action**: Implement the configuration module (`config.py`) to manage environment parameters and thresholds (Task 2).
+*   **Next Action**: Integrate the streaming ASR logic using `faster-whisper` and the `shunya-labs/zero-stt-hinglish` model to support code-switched Indian language inputs (Task 4).

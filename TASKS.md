@@ -2,10 +2,10 @@
 
 ## Phase 1: Environment Setup & Project Configuration
 - [x] **Task 1**: Setup project directory structure, initialize python virtual environment, and construct `requirements.txt` with core libraries (torch, transformers, faster-whisper, gliner, fastapi, uvicorn, websockets, numpy, pydantic).
-- [ ] **Task 2**: Create basic configuration file `config.py` to manage model parameters, API keys, WebSocket paths, and local thresholds.
+- [x] **Task 2**: Create basic configuration file `config.py` to manage model parameters, API keys, WebSocket paths, and local thresholds.
 
 ## Phase 2: Live/Streaming Audio ASR Pipeline
-- [ ] **Task 3**: Implement the Voice Activity Detection (VAD) component using `Silero VAD` to segment incoming live microphone audio streams.
+- [x] **Task 3**: Implement the Voice Activity Detection (VAD) component using `Silero VAD` to segment incoming live microphone audio streams.
 - [ ] **Task 4**: Integrate the streaming ASR logic using `faster-whisper` and the `shunya-labs/zero-stt-hinglish` model to support code-switched Indian language inputs.
 - [ ] **Task 5**: Design a streaming WebSocket handler to accept chunked binary audio from a client, run VAD, transcribe speech incrementally under 800ms latency, and yield text segments.
 
