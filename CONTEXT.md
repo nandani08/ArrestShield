@@ -1,0 +1,64 @@
+# ArrestShield-Live System Context
+
+ArrestShield-Live is a real-time, multilingual scam detection and interactive honeypot system engineered to detect fraudulent calls and digital arrest scams. The system focuses on early detection of social engineering tactics (authority impersonation, fear, urgency, secrecy, isolation, and financial pressure) and deploys an adaptive generative decoy to engage attackers and harvest threat intelligence.
+
+---
+
+## System Architecture
+
+```mermaid
+graph TD
+    A[Live Audio Stream / WebSockets] --> B[Streaming ASR Pipeline]
+    B -->|Incremental Transcript Chunks| C[Tri-State Dual-Engine Detection]
+    C -->|SAFE / Passively Monitor| A
+    C -->|UNCERTAIN / Gather More Context| A
+    C -->|FRAUD / Risk Score > Threshold| D[Adaptive Honeypot Engine]
+    D -->|LLM Response Generator Qwen2.5| E[Synthetic Entity Vault]
+    E -->|Safe Decoy Credentials| F[Voice Response / TTS]
+    D -->|Text Transcript| G[Zero-Shot Entity Extractor GLiNER]
+    G -->|Threat Intelligence Report| H[Threat DB / Incident Logs]
+```
+
+### 1. Real-Time Streaming ASR Pipeline
+*   **Purpose**: Low-latency, incremental transcription of code-switched Indian languages (Hinglish, Hindi, English).
+*   **Technology Stack**:
+    *   **Voice Activity Detection (VAD)**: `Silero VAD` for splitting audio streams into active speech segments.
+    *   **ASR Model**: `shunya-labs/zero-stt-hinglish` or `Oriserve/Whisper-Hindi2Hinglish-Swift` (fine-tuned over `openai/whisper-medium` via `faster-whisper`).
+    *   **Latency Target**: < 800 ms end-to-end chunk processing using 2-second sliding audio windows.
+
+### 2. Tri-State Dual-Engine Detection (SAFE, UNCERTAIN, FRAUD)
+*   **Purpose**: Early classification of incoming conversation transcripts using a sliding turn-based context window.
+*   **Technology Stack**:
+    *   **Model Backbone**: `google/muril-base-cased` fine-tuned with multi-task classification heads:
+        *   *Head A (Binary/Multi-class)*: Scam vs. Non-Scam.
+        *   *Head B (Multi-label Sigmoid)*: Psychological triggers (Urgency, Isolation, Authority, Payment Pressure).
+        *   *Head C (Categorical)*: Scam Stage (Impersonation -> Allegation -> Isolation -> Coercion -> Payment).
+    *   **Risk Fusion**: Mathematical score fusion:
+        $$\text{Risk Score} = w_1 \cdot P(\text{Scam}) + w_2 \cdot \sum P(\text{Triggers}) + w_3 \cdot P(\text{Stage Progression})$$
+    *   **State Machine Transitions**:
+        *   `SAFE`: Continue monitoring.
+        *   `UNCERTAIN`: Expand sliding window to gather 1–2 more conversational turns.
+        *   `FRAUD`: Exceeds threshold; activate honeypot.
+
+### 3. Utility-Driven LLM Honeypot Engine
+*   **Purpose**: Safely engage the scammer using a synthetic victim persona to collect threat indicators without leaking PII.
+*   **Technology Stack**:
+    *   **LLM Core**: `Qwen/Qwen2.5-7B-Instruct` (or `Llama-3.1-8B-Instruct`) run via `vLLM` or `Ollama`.
+    *   **State Tracking Machine**: Transitioning through psychological stages: `Confused` -> `Frightened` -> `Cooperative` -> `Stalling`.
+    *   **Utility Optimization Function**: Maximize threat intelligence while minimizing PII leak risk:
+        $$\text{Utility} = \alpha \cdot (\text{Extracted Indicators}) - \beta \cdot (\text{PII Risk Score})$$
+    *   **Synthetic Entity Vault**: Dynamic interception and swap-out of actual payment info/personal data with pre-validated decoy credentials (synthetic bank accounts, fake OTPs, fake names).
+
+### 4. Zero-Shot Real-Time Threat Extraction
+*   **Purpose**: Extraction of structured threat identifiers from conversational transcripts.
+*   **Technology Stack**:
+    *   **Model**: `GLiNER` (Zero-shot Named Entity Recognition) + Regex post-processors.
+    *   **Extracted Entities**: UPI IDs, phone numbers, fake police badge IDs, court reference numbers, claimed agencies, fake case IDs.
+
+---
+
+## Current Project State
+
+*   **Repository Structure**: Initialized with basic workspace structure.
+*   **Dependencies**: Under definition (targeting PyTorch, Transformers, faster-whisper, GLiNER, FastAPI).
+*   **Next Action**: Phase 1 Environment setup and project configuration.
