@@ -1,3 +1,10 @@
+Metadata-Version: 2.4
+Name: arrestshield
+Version: 0.1.0
+Summary: ArrestShield-Live Real-Time Scam Detection & Honeypot System
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
 # ArrestShield-Live System Context
 
 ArrestShield-Live is a real-time, multilingual scam detection and interactive honeypot system engineered to detect fraudulent calls and digital arrest scams. The system focuses on early detection of social engineering tactics (authority impersonation, fear, urgency, secrecy, isolation, and financial pressure) and deploys an adaptive generative decoy to engage attackers and harvest threat intelligence.

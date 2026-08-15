@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "legit_061",
+    "text": "Sunie, Aapka Amazon delivery agent gate par khada hai. Package receive karne ke liye OTP share kar sakte hain kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_072",
+    "text": "Jaldi suniye, Aapke FedEx courier package mein 5 contraband passports, 140 grams MDMA drugs aur illegal SIM cards paaye gaye hain. Yeh serious national security crime hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_026",
+    "text": "Jaldi suniye, Good afternoon, this is Officer Vikram Singh from CBI Cyber Crime Division New Delhi. Aapke naam par ek suspicious bank account active mila hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_020",
+    "text": "Ji, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_058",
+    "text": "Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_079",
+    "text": "Sunie, Aapka electric bill Rs 1450 pay ho gaya hai successfully. Confirmation code: TXN98721.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_035",
+    "text": "Ji, Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_008",
+    "text": "Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_014",
+    "text": "Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_037",
+    "text": "Aapke parcel mein unauthorized foreign currency aur confidential documents mile hain. Enforcement Directorate aapko interrogate karegi.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_059",
+    "text": "Supreme Court emergency bench judgment se pehle aapko safety clearance certificate issue karwana padega, varna Tihar Jail bheja jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_095",
+    "text": "Ji, Aapka SBI Debit Card dispatch ho gaya hai speed post se. Tracking code SMS par send kar diya hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_087",
+    "text": "Aapke ID se 12 illegal SIM cards register karke cyber fraud aur blackmailing violence execute hui hai. Abhi immediate clearance chahiye.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_069",
+    "text": "Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_088",
+    "text": "Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_033",
+    "text": "Aap samajh rahe ho? Darwaza band kar lo aur phone loudspeaker par rakho. Agar kisi aur ki aawaaz aayi toh obstruction of justice charge lagega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_002",
+    "text": "Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_075",
+    "text": "Ji, Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_052",
+    "text": "Hello, Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_079",
+    "text": "Yeh mazak nahi hai, Agar aap immediate non-bailable arrest warrant cancel karwana chahte ho toh abhi RBI Financial Clearance Cell ko cooperate karo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_047",
+    "text": "Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_056",
+    "text": "Hi, Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_050",
+    "text": "Ji, Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_083",
+    "text": "Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_087",
+    "text": "Hello, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_091",
+    "text": "Sunie, Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_045",
+    "text": "Hello, Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_001",
+    "text": "Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_045",
+    "text": "Jaldi suniye, Security bond deposit karein immediate online fund transfer se. Failure will result in immediate police raid at your current location.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_068",
+    "text": "Yeh mazak nahi hai, Darwaza band kar lo aur phone loudspeaker par rakho. Agar kisi aur ki aawaaz aayi toh obstruction of justice charge lagega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_083",
+    "text": "Sunie, Aapka electric bill Rs 1450 pay ho gaya hai successfully. Confirmation code: TXN98721.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_049",
+    "text": "Hello, Mumma main abhi college lecture mein hu, shaam ko 6 baje ghar aaunga. Kuch grocery lana hai kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_077",
+    "text": "Main warning de raha hu, Aapke ID se 12 illegal SIM cards register karke cyber fraud aur blackmailing violence execute hui hai. Abhi immediate clearance chahiye.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_047",
+    "text": "Hi, Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_100",
+    "text": "Immediately follow the instructions, Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_010",
+    "text": "Aap samajh rahe ho? Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_040",
+    "text": "Do not cut the call, Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_064",
+    "text": "Aapka Amazon delivery agent gate par khada hai. Package receive karne ke liye OTP share kar sakte hain kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_016",
+    "text": "Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_085",
+    "text": "Yeh mazak nahi hai, Security bond deposit karein immediate online fund transfer se. Failure will result in immediate police raid at your current location.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_038",
+    "text": "Hello, Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_084",
+    "text": "Listen to me carefully, Aapke saare bank accounts aur fixed deposits next 30 minutes mein freeze kar diye jayenge agar aapne official verification audit nahi karwaya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_005",
+    "text": "Yeh mazak nahi hai, Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_065",
+    "text": "Main warning de raha hu, Abhi ke abhi aap apne HDFC Bank balance ka 80% RBI Secret Clearance Escrow UPI ID `rbi.sec.clearance@okicici` par transfer karo. Audit ke baad refund ho jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_015",
+    "text": "Samjhe aap? Security bond deposit karein immediate online fund transfer se. Failure will result in immediate police raid at your current location.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_023",
+    "text": "Yeh mazak nahi hai, Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_005",
+    "text": "Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_026",
+    "text": "Sir mera Wi-Fi connection down hai subah se. Net check karke resolve kar do please.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_048",
+    "text": "Listen to me carefully, Yeh official Digital Arrest procedure hai. Aap room ka darwaza lock kar lo, kisi family member ya lawyer ko contact nahi karoge jab tak interrogation chal rahi hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_071",
+    "text": "Ji, Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_031",
+    "text": "Samjhe aap? Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_006",
+    "text": "Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_092",
+    "text": "Ji, Mumma main abhi college lecture mein hu, shaam ko 6 baje ghar aaunga. Kuch grocery lana hai kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_055",
+    "text": "Sunie, Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_051",
+    "text": "Sunie, Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_094",
+    "text": "Aap samajh rahe ho? Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_039",
+    "text": "Hello, Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_025",
+    "text": "Abhi ke abhi aap apne HDFC Bank balance ka 80% RBI Secret Clearance Escrow UPI ID `rbi.sec.clearance@okicici` par transfer karo. Audit ke baad refund ho jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_072",
+    "text": "Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_066",
+    "text": "Listen to me carefully, Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_032",
+    "text": "Hello, Mumma main abhi college lecture mein hu, shaam ko 6 baje ghar aaunga. Kuch grocery lana hai kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_031",
+    "text": "Sunie, Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_030",
+    "text": "Aap samajh rahe ho? Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_023",
+    "text": "Hello, Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_042",
+    "text": "Listen to me carefully, Aapke ID se 12 illegal SIM cards register karke cyber fraud aur blackmailing violence execute hui hai. Abhi immediate clearance chahiye.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_004",
+    "text": "Aapka SBI Debit Card dispatch ho gaya hai speed post se. Tracking code SMS par send kar diya hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_034",
+    "text": "Agar aap immediate non-bailable arrest warrant cancel karwana chahte ho toh abhi RBI Financial Clearance Cell ko cooperate karo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_088",
+    "text": "Sir mera Wi-Fi connection down hai subah se. Net check karke resolve kar do please.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_096",
+    "text": "Hello, Aapka SBI Debit Card dispatch ho gaya hai speed post se. Tracking code SMS par send kar diya hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_081",
+    "text": "Main warning de raha hu, Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_018",
+    "text": "Samjhe aap? Yeh official Digital Arrest procedure hai. Aap room ka darwaza lock kar lo, kisi family member ya lawyer ko contact nahi karoge jab tak interrogation chal rahi hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_055",
+    "text": "Abhi ke abhi aap apne HDFC Bank balance ka 80% RBI Secret Clearance Escrow UPI ID `rbi.sec.clearance@okicici` par transfer karo. Audit ke baad refund ho jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_011",
+    "text": "Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_093",
+    "text": "Listen to me carefully, Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_073",
+    "text": "Yeh mazak nahi hai, Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_076",
+    "text": "Do not cut the call, Good afternoon, this is Officer Vikram Singh from CBI Cyber Crime Division New Delhi. Aapke naam par ek suspicious bank account active mila hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_090",
+    "text": "Hi, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_066",
+    "text": "Sunie, Aapka electric bill Rs 1450 pay ho gaya hai successfully. Confirmation code: TXN98721.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_096",
+    "text": "Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_017",
+    "text": "Listen to me carefully, Aapke FedEx courier package mein 5 contraband passports, 140 grams MDMA drugs aur illegal SIM cards paaye gaye hain. Yeh serious national security crime hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_060",
+    "text": "Hi, Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_022",
+    "text": "Listen to me carefully, Aapke parcel mein unauthorized foreign currency aur confidential documents mile hain. Enforcement Directorate aapko interrogate karegi.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_052",
+    "text": "Do not cut the call, Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_044",
+    "text": "Aap samajh rahe ho? Fast decision lo! Cyber Crime Cell immediate physical custody ka order execute karne wala hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_006",
+    "text": "Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_004",
+    "text": "Agar aap immediate non-bailable arrest warrant cancel karwana chahte ho toh abhi RBI Financial Clearance Cell ko cooperate karo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_024",
+    "text": "Hi, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_056",
+    "text": "Good afternoon, this is Officer Vikram Singh from CBI Cyber Crime Division New Delhi. Aapke naam par ek suspicious bank account active mila hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_098",
+    "text": "Hello, Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_092",
+    "text": "Samjhe aap? Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_074",
+    "text": "Hello, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_029",
+    "text": "Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_078",
+    "text": "Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_018",
+    "text": "Sunie, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_095",
+    "text": "Samjhe aap? Security bond deposit karein immediate online fund transfer se. Failure will result in immediate police raid at your current location.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_069",
+    "text": "Aapke saare bank accounts aur fixed deposits next 30 minutes mein freeze kar diye jayenge agar aapne official verification audit nahi karwaya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_012",
+    "text": "Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_011",
+    "text": "Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_097",
+    "text": "Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_029",
+    "text": "Sunie, Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_067",
+    "text": "Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_001",
+    "text": "Listen to me carefully, Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_040",
+    "text": "Ji, Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_049",
+    "text": "Listen to me carefully, Fast decision lo! Cyber Crime Cell immediate physical custody ka order execute karne wala hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_084",
+    "text": "Hello, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_098",
+    "text": "Darwaza band kar lo aur phone loudspeaker par rakho. Agar kisi aur ki aawaaz aayi toh obstruction of justice charge lagega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_003",
+    "text": "Darwaza band kar lo aur phone loudspeaker par rakho. Agar kisi aur ki aawaaz aayi toh obstruction of justice charge lagega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_090",
+    "text": "Listen to me carefully, Abhi ke abhi aap apne HDFC Bank balance ka 80% RBI Secret Clearance Escrow UPI ID `rbi.sec.clearance@okicici` par transfer karo. Audit ke baad refund ho jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_075",
+    "text": "Jaldi suniye, Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_077",
+    "text": "Sunie, Sir mera Wi-Fi connection down hai subah se. Net check karke resolve kar do please.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_076",
+    "text": "Sunie, Aapka Amazon delivery agent gate par khada hai. Package receive karne ke liye OTP share kar sakte hain kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_046",
+    "text": "Hi, Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_081",
+    "text": "Ji, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_027",
+    "text": "Listen to me carefully, Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_008",
+    "text": "Samjhe aap? Yeh official Digital Arrest procedure hai. Aap room ka darwaza lock kar lo, kisi family member ya lawyer ko contact nahi karoge jab tak interrogation chal rahi hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_021",
+    "text": "Hi, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_028",
+    "text": "Hi, Haan bhai, main office pahunch gaya hu. Shaam ko meeting ke baad project discussion finish karte hain.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_042",
+    "text": "Sunie, Aapka electric bill Rs 1450 pay ho gaya hai successfully. Confirmation code: TXN98721.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_043",
+    "text": "Yeh mazak nahi hai, Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_053",
+    "text": "Yeh mazak nahi hai, Aap kisi bank officer ya police ko secret disclose nahi karoge. High-profile national secrecy matter hai, confidentiality maintain rakho.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_054",
+    "text": "Immediately follow the instructions, Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_009",
+    "text": "Aap samajh rahe ho? Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_100",
+    "text": "Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_091",
+    "text": "Listen to me carefully, Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_037",
+    "text": "Hello, Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_089",
+    "text": "Aap samajh rahe ho? Supreme Court emergency bench judgment se pehle aapko safety clearance certificate issue karwana padega, varna Tihar Jail bheja jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_078",
+    "text": "Hi, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_060",
+    "text": "Yeh mazak nahi hai, Aapke verification ke liye ₹50,000 Google Pay / PhonePe par UPI `gov.cyber.verification@paytm` par send karein. Verification letter 15 min mein mil jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "scam_039",
+    "text": "Supreme Court emergency bench judgment se pehle aapko safety clearance certificate issue karwana padega, varna Tihar Jail bheja jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_036",
+    "text": "Do not cut the call, Sir, main Delhi Customs Department se Call Officer Roy bol raha hu. Mumbai International Airport par aapka parcel intercept kiya gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_021",
+    "text": "Yeh mazak nahi hai, Good afternoon, this is Officer Vikram Singh from CBI Cyber Crime Division New Delhi. Aapke naam par ek suspicious bank account active mila hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_054",
+    "text": "Hello, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_097",
+    "text": "Ji, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_070",
+    "text": "Yeh mazak nahi hai, Abhi ke abhi aap apne HDFC Bank balance ka 80% RBI Secret Clearance Escrow UPI ID `rbi.sec.clearance@okicici` par transfer karo. Audit ke baad refund ho jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_094",
+    "text": "Sunie, Sir mera Wi-Fi connection down hai subah se. Net check karke resolve kar do please.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_074",
+    "text": "Main warning de raha hu, Aapke saare bank accounts aur fixed deposits next 30 minutes mein freeze kar diye jayenge agar aapne official verification audit nahi karwaya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_020",
+    "text": "Immediately follow the instructions, Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_013",
+    "text": "Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_099",
+    "text": "Hi, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_062",
+    "text": "Main warning de raha hu, Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_025",
+    "text": "Sunie, Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_034",
+    "text": "Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_071",
+    "text": "Listen to me carefully, Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_080",
+    "text": "Sunie, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_067",
+    "text": "Aapke FedEx courier package mein 5 contraband passports, 140 grams MDMA drugs aur illegal SIM cards paaye gaye hain. Yeh serious national security crime hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_016",
+    "text": "Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_085",
+    "text": "Ji, Mumma main abhi college lecture mein hu, shaam ko 6 baje ghar aaunga. Kuch grocery lana hai kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_041",
+    "text": "Samjhe aap? Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_015",
+    "text": "Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_041",
+    "text": "Hello, Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_010",
+    "text": "Aapka Amazon delivery agent gate par khada hai. Package receive karne ke liye OTP share kar sakte hain kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_030",
+    "text": "Hi, Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_014",
+    "text": "Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_082",
+    "text": "Aap samajh rahe ho? Aapke FedEx courier package mein 5 contraband passports, 140 grams MDMA drugs aur illegal SIM cards paaye gaye hain. Yeh serious national security crime hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_053",
+    "text": "Hi, Mumma main abhi college lecture mein hu, shaam ko 6 baje ghar aaunga. Kuch grocery lana hai kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_044",
+    "text": "Hello, Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_036",
+    "text": "Hello, Sir mera Wi-Fi connection down hai subah se. Net check karke resolve kar do please.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_065",
+    "text": "Sunie, Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_035",
+    "text": "Aap samajh rahe ho? Arrest Order freeze karne ke liye ₹1,20,000 ka clearance demand draft deposit karein is Court Registry Account ID par.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_082",
+    "text": "Ji, Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_032",
+    "text": "Aapke ID se 12 illegal SIM cards register karke cyber fraud aur blackmailing violence execute hui hai. Abhi immediate clearance chahiye.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_064",
+    "text": "Do not cut the call, Supreme Court emergency bench judgment se pehle aapko safety clearance certificate issue karwana padega, varna Tihar Jail bheja jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_043",
+    "text": "Ji, Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_013",
+    "text": "Samjhe aap? Yeh official Digital Arrest procedure hai. Aap room ka darwaza lock kar lo, kisi family member ya lawyer ko contact nahi karoge jab tak interrogation chal rahi hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "legit_019",
+    "text": "Ji, Haan bhai, main office pahunch gaya hu. Shaam ko meeting ke baad project discussion finish karte hain.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_033",
+    "text": "Hi, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_046",
+    "text": "Jaldi suniye, Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_057",
+    "text": "Aapke parcel mein unauthorized foreign currency aur confidential documents mile hain. Enforcement Directorate aapko interrogate karegi.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_009",
+    "text": "Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_028",
+    "text": "Immediately follow the instructions, Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_002",
+    "text": "Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "legit_068",
+    "text": "Hi, Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_089",
+    "text": "Ji, Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_086",
+    "text": "Ji, Ji main Swiggy driver bol raha hu, aapka exact flat number bata dijiye.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_003",
+    "text": "Bhai kal ki train ticket confirm ho gayi hai. 8:30 PM par station pahunch jana time se.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_027",
+    "text": "Ji, Haan bhai, main office pahunch gaya hu. Shaam ko meeting ke baad project discussion finish karte hain.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_099",
+    "text": "Fast decision lo! Cyber Crime Cell immediate physical custody ka order execute karne wala hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_050",
+    "text": "Aap samajh rahe ho? Arrest Order freeze karne ke liye ₹1,20,000 ka clearance demand draft deposit karein is Court Registry Account ID par.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_048",
+    "text": "Ji, Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_062",
+    "text": "Haan bhai, main office pahunch gaya hu. Shaam ko meeting ke baad project discussion finish karte hain.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_007",
+    "text": "Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_017",
+    "text": "Hello, Sir aapka Zomato order deliver ho gaya hai. Kindly app par delivery rate kar dijiye. Thank you!",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_019",
+    "text": "Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "legit_057",
+    "text": "Sunie, Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_022",
+    "text": "Hi, Aapka Amazon delivery agent gate par khada hai. Package receive karne ke liye OTP share kar sakte hain kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_063",
+    "text": "Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_012",
+    "text": "Listen to me carefully, Aapke ID se 12 illegal SIM cards register karke cyber fraud aur blackmailing violence execute hui hai. Abhi immediate clearance chahiye.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_007",
+    "text": "Do not cut the call, Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 2,
+    "scam_stage_name": "allegation"
+  },
+  {
+    "id": "scam_038",
+    "text": "Jaldi suniye, Yeh official Digital Arrest procedure hai. Aap room ka darwaza lock kar lo, kisi family member ya lawyer ko contact nahi karoge jab tak interrogation chal rahi hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_051",
+    "text": "Aap samajh rahe ho? Good afternoon, this is Officer Vikram Singh from CBI Cyber Crime Division New Delhi. Aapke naam par ek suspicious bank account active mila hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "scam_058",
+    "text": "Yeh official Digital Arrest procedure hai. Aap room ka darwaza lock kar lo, kisi family member ya lawyer ko contact nahi karoge jab tak interrogation chal rahi hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 0
+    },
+    "scam_stage": 3,
+    "scam_stage_name": "isolation"
+  },
+  {
+    "id": "scam_080",
+    "text": "Aapke verification ke liye ₹50,000 Google Pay / PhonePe par UPI `gov.cyber.verification@paytm` par send karein. Verification letter 15 min mein mil jayega.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 1
+    },
+    "scam_stage": 5,
+    "scam_stage_name": "payment"
+  },
+  {
+    "id": "legit_073",
+    "text": "Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_061",
+    "text": "Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_093",
+    "text": "Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "scam_024",
+    "text": "Fast decision lo! Cyber Crime Cell immediate physical custody ka order execute karne wala hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 1,
+      "payment_pressure": 1
+    },
+    "scam_stage": 4,
+    "scam_stage_name": "coercion"
+  },
+  {
+    "id": "scam_086",
+    "text": "Listen to me carefully, Sir, main Delhi Customs Department se Call Officer Roy bol raha hu. Mumbai International Airport par aapka parcel intercept kiya gaya hai.",
+    "is_scam": 1,
+    "triggers": {
+      "authority": 1,
+      "urgency": 1,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 1,
+    "scam_stage_name": "impersonation"
+  },
+  {
+    "id": "legit_059",
+    "text": "Hello ji, Airtel broadband bill pay karna hai. Kya new offer active hai 399 plan par?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_063",
+    "text": "Hi, Good morning doctor, mera appointment 4:00 PM par scheduled tha. Kya main 15 minute late aa sakta hu?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  },
+  {
+    "id": "legit_070",
+    "text": "Sunie, Mumma main abhi college lecture mein hu, shaam ko 6 baje ghar aaunga. Kuch grocery lana hai kya?",
+    "is_scam": 0,
+    "triggers": {
+      "authority": 0,
+      "urgency": 0,
+      "isolation": 0,
+      "payment_pressure": 0
+    },
+    "scam_stage": 0,
+    "scam_stage_name": "none"
+  }
+]
