@@ -25,7 +25,7 @@
 - [x] **Task 14**: Implement regex-based post-processors to clean up and validate extracted entities (UPI formats, Indian mobile phone patterns, URL endpoints).
 
 ## Phase 6: Integration, Server, & Web Dashboard
-- [ ] **Task 15**: Build the main `app.py` FastAPI server integrating WebSocket ASR connection, Tri-State ML evaluation, LLM Honeypot activation, and GLiNER extraction.
+- [x] **Task 15**: Build the main `app.py` FastAPI server integrating WebSocket ASR connection, Tri-State ML evaluation, LLM Honeypot activation, and GLiNER extraction.
 - [ ] **Task 16**: Create a sleek, modern, glassmorphic HTML/CSS/JS frontend dashboard to stream microphone audio, display real-time transcript chunks, plot risk score gauges, and render threat logs.
 
 ## Phase 7: End-to-End Simulation & Verification

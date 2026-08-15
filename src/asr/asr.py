@@ -88,3 +88,15 @@ class HinglishTranscriber:
             
         full_text = "".join(text_segments).strip()
         return full_text, detailed_segments
+
+
+class DummyHinglishTranscriber:
+    """
+    Fallback Transcriber for offline or test environments.
+    Simulates speech recognition without requiring model downloads.
+    """
+    def __init__(self, *args, **kwargs):
+        pass
+
+    def transcribe(self, audio: np.ndarray, **kwargs) -> Tuple[str, List[Dict[str, Any]]]:
+        return "Simulated ASR transcription.", [{"start": 0.0, "end": 1.0, "text": "Simulated ASR transcription.", "probability": 0.99}]

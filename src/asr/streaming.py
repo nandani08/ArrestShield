@@ -4,7 +4,7 @@ import numpy as np
 from typing import List, Dict, Any, Optional, Union
 
 from src.asr.vad import VoiceActivityDetector
-from src.asr.asr import HinglishTranscriber
+from src.asr.asr import HinglishTranscriber, DummyHinglishTranscriber
 from src.config import settings
 
 logger = logging.getLogger("ArrestShield.StreamingASR")
@@ -35,7 +35,15 @@ class StreamingASRProcessor:
         self.latency_target_ms = latency_target_ms
 
         self.vad = vad_detector or VoiceActivityDetector(sample_rate=sample_rate)
-        self.transcriber = transcriber or HinglishTranscriber()
+
+        if transcriber is None:
+            try:
+                self.transcriber = HinglishTranscriber()
+            except Exception as e:
+                logger.warning(f"Could not initialize online HinglishTranscriber ({e}). Using DummyHinglishTranscriber.")
+                self.transcriber = DummyHinglishTranscriber()
+        else:
+            self.transcriber = transcriber
 
         # Audio sample buffers
         self.audio_samples_buffer = np.array([], dtype=np.float32)
