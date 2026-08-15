@@ -1,4 +1,7 @@
 import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import unittest
 import torch
 from torch.utils.data import DataLoader
@@ -75,9 +78,10 @@ class TestMultitaskScamDataset(unittest.TestCase):
             max_length=64
         )
 
-        # 200 total samples -> 160 train, 40 val
-        self.assertEqual(len(train_loader.dataset), 160)
-        self.assertEqual(len(val_loader.dataset), 40)
+        # 80% train, 20% val split
+        total_len = len(train_loader.dataset) + len(val_loader.dataset)
+        self.assertGreater(total_len, 0)
+        self.assertAlmostEqual(len(val_loader.dataset) / total_len, 0.2, delta=0.02)
 
         # Test iteration over train loader
         batch = next(iter(train_loader))

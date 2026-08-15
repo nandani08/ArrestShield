@@ -13,10 +13,10 @@
 - [x] **Task 6**: Prepare the Multitask MuRIL dataset loader class for scam/non-scam conversations with custom annotations (manipulation triggers, stage progression).
 - [x] **Task 7**: Define and implement the multi-task model architecture utilizing a shared `google/muril-base-cased` backbone and three task heads (Scam classification, Trigger multi-label sigmoid, Stage progression categorical classification).
 - [x] **Task 8**: Develop the training and validation script (`train_detector.py`) for the Multitask MuRIL classifier, including early stopping and classification metrics.
-- [ ] **Task 9**: Implement the Tri-State Sliding Context Window logic to classify current dialogue segments into `SAFE`, `UNCERTAIN`, or `FRAUD` based on risk score fusion calculations.
+- [x] **Task 9**: Implement the Tri-State Sliding Context Window logic to classify current dialogue segments into `SAFE`, `UNCERTAIN`, or `FRAUD` based on risk score fusion calculations.
 
 ## Phase 4: Adaptive LLM Honeypot Engine
-- [ ] **Task 10**: Define the LLM client wrapper (supporting Ollama/vLLM for local execution of `Qwen2.5-7B-Instruct`) and draft the system prompt template enforcing victim persona dynamics.
+- [x] **Task 10**: Define the LLM client wrapper (supporting Ollama/vLLM for local execution of `Qwen2.5-7B-Instruct`) and draft the system prompt template enforcing victim persona dynamics.
 - [ ] **Task 11**: Implement the Honeypot State Machine to track and transition the synthetic victim through psychological states (`Confused` -> `Frightened` -> `Cooperative` -> `Stalling`).
 - [ ] **Task 12**: Develop the Synthetic Entity Vault to dynamically intercept and swap out real payment coordinates/credentials with pre-generated synthetic decoy data.
 

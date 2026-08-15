@@ -7,6 +7,7 @@ from .dataset import (
 )
 from .model import MultitaskMuRILDetector, DummyBackbone
 from .train_detector import run_training, train_one_epoch, evaluate, EarlyStopping, calculate_metrics
+from .tristate_detector import TriStateDetector, DetectionState
 
 __all__ = [
     "MultitaskScamDataset",
@@ -19,5 +20,7 @@ __all__ = [
     "train_one_epoch",
     "evaluate",
     "EarlyStopping",
-    "calculate_metrics"
+    "calculate_metrics",
+    "TriStateDetector",
+    "DetectionState"
 ]
