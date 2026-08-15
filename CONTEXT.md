@@ -55,10 +55,8 @@ graph TD
     *   **Model**: `GLiNER` (Zero-shot Named Entity Recognition) + Regex post-processors.
     *   **Extracted Entities**: UPI IDs, phone numbers, fake police badge IDs, court reference numbers, claimed agencies, fake case IDs.
 
----
-
 ## Current Project State
 
-*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), package initialization files, the configuration module `src/config.py`, the Voice Activity Detection module `src/asr/vad.py`, and the ASR transcription module `src/asr/asr.py`.
+*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), package initialization files, the configuration module `src/config.py`, the Voice Activity Detection module `src/asr/vad.py`, the ASR transcription module `src/asr/asr.py`, the streaming ASR processor `src/asr/streaming.py`, the streaming WebSocket endpoint `src/server/websocket.py`, and corresponding unit tests in `tests/`.
 *   **Dependencies**: Defined in `requirements.txt`.
-*   **Next Action**: Design a streaming WebSocket handler to accept chunked binary audio from a client, run VAD, transcribe speech incrementally under 800ms latency, and yield text segments (Task 5).
+*   **Next Action**: Prepare the Multitask MuRIL dataset loader class for scam/non-scam conversations with custom annotations (Task 6).

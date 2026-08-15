@@ -1,11 +1,9 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 import numpy as np
 import torch
-import warnings
 from typing import List, Dict, Union, Optional
-
-# Suppress warnings from PyTorch JIT serialization/load in python 3.14+
-warnings.filterwarnings("ignore", category=DeprecationWarning)
-warnings.filterwarnings("ignore", category=ResourceWarning)
 
 from silero_vad import load_silero_vad, VADIterator
 
