@@ -116,7 +116,8 @@ class ThreatPostProcessor:
     def clean_identifier(raw_id: str) -> Optional[str]:
         """Cleans badge IDs and case/warrant reference numbers."""
         cleaned = ThreatPostProcessor.clean_raw_string(raw_id)
-        cleaned = re.sub(r"^(badge|officer|case|ref|file|warrant|notice|#|\s)+", "", cleaned, flags=re.IGNORECASE).strip()
+        cleaned = re.sub(r"^(?:badge|officer|case|ref|file|warrant|notice|id)\s*#?\s*", "", cleaned, flags=re.IGNORECASE).strip()
+        cleaned = re.sub(r"^#\s*", "", cleaned).strip()
         
         if len(cleaned) >= 3 and any(c.isalnum() for c in cleaned):
             return cleaned.upper()

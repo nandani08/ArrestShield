@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrestShield-Live | Digital Arrest Scam Detection & LLM Honeypot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="glass-panel">
+        <div class="logo-container">
+            <div class="logo-icon">🛡️</div>
+            <div class="logo-text">
+                <h1>ArrestShield-Live</h1>
+                <p>Real-Time Multilingual Scam Detection & Adaptive LLM Honeypot</p>
+            </div>
+        </div>
+
+        <div class="status-badge" id="systemStatusBadge">
+            <div class="status-dot"></div>
+            <span id="statusText">System Ready</span>
+        </div>
+
+        <div class="controls-group">
+            <button class="btn btn-primary" id="btnToggleMic">
+                <span id="micIcon">🎙️</span>
+                <span id="micBtnLabel">Start Mic Stream</span>
+            </button>
+            <button class="btn btn-secondary" id="btnResetSession">
+                🔄 Reset Session
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Grid -->
+    <main class="dashboard-grid">
+        
+        <!-- Left Column: Audio Stream & Honeypot Dialogue -->
+        <section class="left-column" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Live Audio & Transcript Stream Panel -->
+            <article class="glass-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span>💬</span> Live Conversation Stream
+                    </div>
+                    <span style="font-size: 0.75rem; color: var(--text-dim);" id="connectionLatency">Latency: -- ms</span>
+                </div>
+                <div class="panel-body">
+                    <!-- Audio Waveform Visualizer -->
+                    <div class="waveform-container">
+                        <canvas id="waveformCanvas"></canvas>
+                    </div>
+
+                    <!-- Transcript Conversation Log -->
+                    <div class="transcript-box" id="transcriptContainer">
+                        <div class="chat-bubble chat-scammer" style="opacity: 0.7;">
+                            <div class="speaker-label">
+                                <span>SYSTEM</span>
+                                <span>INITIALIZED</span>
+                            </div>
+                            Ready to intercept conversation turns. Speak into your microphone or click a preset simulation scenario below.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Adaptive LLM Honeypot Terminal Panel -->
+            <article class="glass-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span>🤖</span> Adaptive LLM Honeypot Engine
+                    </div>
+                    <span class="state-pill state-safe" id="honeypotStatePill" style="font-size: 0.75rem; padding: 0.2rem 0.7rem;">
+                        IDLE
+                    </span>
+                </div>
+                <div class="panel-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Synthetic Victim Persona: <strong style="color: var(--text-main);">Ramesh Chandra Gupta (Senior Citizen)</strong></span>
+                        <span style="font-size: 0.8rem; color: var(--accent-cyan);" id="honeypotUtilityScore">Utility Score: 0.0</span>
+                    </div>
+
+                    <!-- Decoy Vault Credentials Card -->
+                    <div class="decoy-card" id="decoyVaultCard">
+                        <div class="decoy-title">
+                            <span>🔐</span> Synthetic Decoy Credentials Active
+                        </div>
+                        <div id="decoyDetails">
+                            Loading synthetic decoy vault details...
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Right Column: Tri-State Risk Score & Threat Intelligence Vault -->
+        <section class="right-column" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Tri-State Scam Risk Engine Panel -->
+            <article class="glass-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span>⚡</span> Tri-State Scam Risk Engine
+                    </div>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);" id="predictedStageBadge">Stage: Monitoring</span>
+                </div>
+                <div class="panel-body">
+                    <!-- Gauge Meter -->
+                    <div class="risk-gauge-wrapper">
+                        <div class="gauge-circle">
+                            <svg class="gauge-svg" viewBox="0 0 160 160">
+                                <circle class="gauge-bg" cx="80" cy="80" r="70"></circle>
+                                <circle class="gauge-progress" id="gaugeProgressCircle" cx="80" cy="80" r="70"></circle>
+                            </svg>
+                            <div class="gauge-content">
+                                <div class="gauge-score" id="riskScoreValue">0%</div>
+                                <div style="font-size: 0.7rem; color: var(--text-dim);">RISK SCORE</div>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic State Pill -->
+                        <div class="state-pill state-safe" id="triStatePill">
+                            SAFE
+                        </div>
+                    </div>
+
+                    <!-- Trigger Progress Meters -->
+                    <div class="triggers-container">
+                        <div class="trigger-row">
+                            <div class="trigger-info">
+                                <span>Police / Authority Impersonation</span>
+                                <span id="trigAuthorityVal">0%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="trigAuthorityBar" style="background-color: var(--accent-indigo);"></div>
+                            </div>
+                        </div>
+
+                        <div class="trigger-row">
+                            <div class="trigger-info">
+                                <span>Urgency & Legal Coercion</span>
+                                <span id="trigUrgencyVal">0%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="trigUrgencyBar" style="background-color: var(--accent-violet);"></div>
+                            </div>
+                        </div>
+
+                        <div class="trigger-row">
+                            <div class="trigger-info">
+                                <span>Isolation & Silence Demand</span>
+                                <span id="trigIsolationVal">0%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="trigIsolationBar" style="background-color: var(--accent-cyan);"></div>
+                            </div>
+                        </div>
+
+                        <div class="trigger-row">
+                            <div class="trigger-info">
+                                <span>Payment / UPI Pressure</span>
+                                <span id="trigPaymentVal">0%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="trigPaymentBar" style="background-color: var(--color-fraud);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Zero-Shot Threat Intelligence Vault Panel -->
+            <article class="glass-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span>🕵️‍♂️</span> Threat Intelligence Vault (GLiNER)
+                    </div>
+                    <span style="font-size: 0.75rem; color: var(--color-safe);" id="threatCountBadge">0 Identifiers</span>
+                </div>
+                <div class="panel-body">
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">
+                        Extracted actionable threat evidence (UPI handles, phone numbers, fake badge IDs, case IDs):
+                    </p>
+
+                    <div class="threat-grid" id="threatGrid">
+                        <div class="threat-card">
+                            <span class="threat-type">Status</span>
+                            <span class="threat-value" style="color: var(--text-dim);">No threats detected yet</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Simulation Toolbar Footer -->
+    <footer class="glass-panel sim-toolbar">
+        <div class="sim-title">
+            <span>💡</span> Preset Scam Simulations:
+        </div>
+        <div class="sim-buttons">
+            <button class="btn btn-secondary" onclick="simulatePreset('arrest')">
+                🚨 Digital Arrest Scam
+            </button>
+            <button class="btn btn-secondary" onclick="simulatePreset('upi')">
+                💳 UPI Payment Scam
+            </button>
+            <button class="btn btn-secondary" onclick="simulatePreset('safe')">
+                ✅ Safe Normal Call
+            </button>
+        </div>
+    </footer>
+
+    <!-- App JavaScript logic -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

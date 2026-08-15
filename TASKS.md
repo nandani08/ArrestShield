@@ -26,7 +26,7 @@
 
 ## Phase 6: Integration, Server, & Web Dashboard
 - [x] **Task 15**: Build the main `app.py` FastAPI server integrating WebSocket ASR connection, Tri-State ML evaluation, LLM Honeypot activation, and GLiNER extraction.
-- [ ] **Task 16**: Create a sleek, modern, glassmorphic HTML/CSS/JS frontend dashboard to stream microphone audio, display real-time transcript chunks, plot risk score gauges, and render threat logs.
+- [x] **Task 16**: Create a sleek, modern, glassmorphic HTML/CSS/JS frontend dashboard to stream microphone audio, display real-time transcript chunks, plot risk score gauges, and render threat logs.
 
 ## Phase 7: End-to-End Simulation & Verification
-- [ ] **Task 17**: Write mock integration tests simulating complete scam conversation sequences to verify detection latency, honeypot transitions, and threat extraction metrics.
+- [x] **Task 17**: Write mock integration tests simulating complete scam conversation sequences to verify detection latency, honeypot transitions, and threat extraction metrics.

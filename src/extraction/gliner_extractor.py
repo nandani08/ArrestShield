@@ -54,10 +54,10 @@ class DummyThreatExtractor:
             })
 
         # 4. Case ID / Court Reference Number (e.g. CR-2024-9812, Case #9821, Ref #4912)
-        case_pattern = r"\b(?:case|ref|file|warrant|notice)\s*#?\s*([a-zA-Z0-9/-]+)\b"
+        case_pattern = r"\b(?:warrant case|case|ref|file|warrant|notice)\s*#?\s*([a-zA-Z0-9/-]{3,})\b"
         for match in re.finditer(case_pattern, text, flags=re.IGNORECASE):
             val = match.group(1)
-            if len(val) >= 3 and any(c.isdigit() for c in val):
+            if any(c.isdigit() for c in val):
                 entities.append({
                     "text": val,
                     "label": "case ID",
