@@ -1,5 +1,6 @@
 import os
 from typing import List
+# pyrefly: ignore [missing-import]
 from pydantic import BaseModel, Field
 
 class ASRConfig(BaseModel):

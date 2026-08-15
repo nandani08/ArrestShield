@@ -6,7 +6,7 @@
 
 ## Phase 2: Live/Streaming Audio ASR Pipeline
 - [x] **Task 3**: Implement the Voice Activity Detection (VAD) component using `Silero VAD` to segment incoming live microphone audio streams.
-- [ ] **Task 4**: Integrate the streaming ASR logic using `faster-whisper` and the `shunya-labs/zero-stt-hinglish` model to support code-switched Indian language inputs.
+- [x] **Task 4**: Integrate the streaming ASR logic using `faster-whisper` and the `shunya-labs/zero-stt-hinglish` model to support code-switched Indian language inputs.
 - [ ] **Task 5**: Design a streaming WebSocket handler to accept chunked binary audio from a client, run VAD, transcribe speech incrementally under 800ms latency, and yield text segments.
 
 ## Phase 3: Tri-State ML Detection Engine
