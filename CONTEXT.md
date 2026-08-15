@@ -57,6 +57,6 @@ graph TD
 
 ## Current Project State
 
-*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), package initialization files, the configuration module `src/config.py`, streaming ASR modules (`src/asr/vad.py`, `src/asr/asr.py`, `src/asr/streaming.py`), streaming WebSocket endpoint `src/server/websocket.py`, synthetic dataset generator `scripts/generate_dataset.py`, synthetic dataset `data/scam_dataset.json`, Multitask PyTorch Dataset & DataLoader (`src/detection/dataset.py`), and corresponding unit tests in `tests/`.
+*   **Repository Structure**: Initialized with venv, source directories (`src/asr`, `src/detection`, `src/honeypot`, `src/extraction`, `src/server`), package initialization files, the configuration module `src/config.py`, streaming ASR modules (`src/asr/vad.py`, `src/asr/asr.py`, `src/asr/streaming.py`), streaming WebSocket endpoint `src/server/websocket.py`, synthetic dataset generator `scripts/generate_dataset.py`, synthetic dataset `data/scam_dataset.json`, Multitask PyTorch Dataset (`src/detection/dataset.py`), Multitask MuRIL Classifier (`src/detection/model.py`), training & evaluation pipeline (`src/detection/train_detector.py`, `train_detector.py`), and corresponding unit tests in `tests/`.
 *   **Dependencies**: Defined in `requirements.txt`.
-*   **Next Action**: Define and implement the multi-task model architecture utilizing a shared `google/muril-base-cased` backbone and three task heads (Task 7).
+*   **Next Action**: Implement the Tri-State Sliding Context Window logic to classify dialogue segments into SAFE, UNCERTAIN, or FRAUD based on risk score fusion calculations (Task 9).

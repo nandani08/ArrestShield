@@ -19,7 +19,7 @@ STAGE_MAP = {
 TRIGGER_KEYS = ["authority", "urgency", "isolation", "payment_pressure"]
 
 
-def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
+def generate_scam_samples(count: int = 250) -> List[Dict[str, Any]]:
     """Generates synthetic annotated digital-arrest and social engineering scam samples in Hinglish."""
     scam_templates = [
         # Stage 1: Impersonation (Authority + Urgency)
@@ -28,11 +28,13 @@ def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
             "stage_name": "impersonation",
             "triggers": {"authority": 1, "urgency": 1, "isolation": 0, "payment_pressure": 0},
             "phrases": [
-                "Namaste, main Mumbai Police Headquarters Cyber Cell से Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
+                "Namaste, main Mumbai Police Headquarters Cyber Cell se Senior Inspector Sharma bol raha hu. Aapka Aadhar number ek major criminal investigation se link hua hai.",
                 "Attention! Main TRAI Department Delhi se speak kar raha hu. Aapka mobile number agle 2 ghante mein permanently block aur disconnect kar diya jayega.",
                 "Good afternoon, this is Officer Vikram Singh from CBI Cyber Crime Division New Delhi. Aapke naam par ek suspicious bank account active mila hai.",
                 "Sir, main Delhi Customs Department se Call Officer Roy bol raha hu. Mumbai International Airport par aapka parcel intercept kiya gaya hai.",
-                "Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai."
+                "Warning! Main Crime Branch Officer Rajesh Varma bol raha hu. Supreme Court se aapke khilaaf arrest warrant issue ho gaya hai.",
+                "Hello, main RBI Security Bureau se Officer Vivek speak kar raha hu. Aapka bank account fraudulent transactions ke liye flagged hua hai.",
+                "Attention citizen! Main Enforcement Directorate (ED) Head Office New Delhi se Senior Dy. Director speak kar raha hu."
             ]
         },
         # Stage 2: Allegation (Authority + Urgency + Isolation)
@@ -44,8 +46,9 @@ def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
                 "Aapke FedEx courier package mein 5 contraband passports, 140 grams MDMA drugs aur illegal SIM cards paaye gaye hain. Yeh serious national security crime hai.",
                 "Aapke HDFC account se 45 Lakhs ki money laundering narcotics syndicate ke saath track hui hai. Aap primary suspect ho is hawala case mein.",
                 "Aapke ID se 12 illegal SIM cards register karke cyber fraud aur blackmailing violence execute hui hai. Abhi immediate clearance chahiye.",
-                "Aapke name par registed Canara Bank account human trafficking aur illegal fund transfers ke liye use hua hai. Fast reply karo varna team bhej rahe hain.",
-                "Aapke parcel mein unauthorized foreign currency aur confidential documents mile hain. Enforcement Directorate aapko interrogate karegi."
+                "Aapke name par registered Canara Bank account human trafficking aur illegal fund transfers ke liye use hua hai. Fast reply karo varna team bhej rahe hain.",
+                "Aapke parcel mein unauthorized foreign currency aur confidential documents mile hain. Enforcement Directorate aapko interrogate karegi.",
+                "Aap par illegal money trail aur hawala funding का charge laga hai. Aap Supreme Court hearing attend karenge."
             ]
         },
         # Stage 3: Isolation (Authority + Urgency + Isolation)
@@ -58,7 +61,8 @@ def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
                 "Camera aur microphone continuously ON rakho. Ghar ke baahar nikalna ya kisi se baat karna court Order violation mana jayega.",
                 "Aap kisi bank officer ya police ko secret disclose nahi karoge. High-profile national secrecy matter hai, confidentiality maintain rakho.",
                 "Virtual Digital Arrest start ho chuka hai. WhatsApp video call cut mat karna, varna local PCR van 10 minute mein aapke address par arrest karne aayegi.",
-                "Darwaza band kar lo aur phone loudspeaker par rakho. Agar kisi aur ki aawaaz aayi toh obstruction of justice charge lagega."
+                "Darwaza band kar lo aur phone loudspeaker par rakho. Agar kisi aur ki aawaaz aayi toh obstruction of justice charge lagega.",
+                "Aap akele ek shant kamre mein baitho aur kisi se bhi koi contact mat banao."
             ]
         },
         # Stage 4: Coercion (Authority + Urgency + Isolation + Payment Pressure)
@@ -71,7 +75,8 @@ def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
                 "Aapke saare bank accounts aur fixed deposits next 30 minutes mein freeze kar diye jayenge agar aapne official verification audit nahi karwaya.",
                 "Supreme Court emergency bench judgment se pehle aapko safety clearance certificate issue karwana padega, varna Tihar Jail bheja jayega.",
                 "Aap par IPC Section 420 aur Prevention of Money Laundering Act (PMLA) ka trial chalega agar abhi formal clearance security process follow nahi kiya.",
-                "Fast decision lo! Cyber Crime Cell immediate physical custody ka order execute karne wala hai."
+                "Fast decision lo! Cyber Crime Cell immediate physical custody ka order execute karne wala hai.",
+                "Agle 15 minute mein jail ya clearance deposit, choice aapki hai!"
             ]
         },
         # Stage 5: Payment (Authority + Urgency + Payment Pressure)
@@ -84,7 +89,8 @@ def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
                 "Immediate safety deposit ke liye ₹2,50,000 RTGS/IMPS through is verified Government Audit Account number 918237465012 IFSC SBIN0004321 par bhejo.",
                 "Aapke verification ke liye ₹50,000 Google Pay / PhonePe par UPI `gov.cyber.verification@paytm` par send karein. Verification letter 15 min mein mil jayega.",
                 "Arrest Order freeze karne ke liye ₹1,20,000 ka clearance demand draft deposit karein is Court Registry Account ID par.",
-                "Security bond deposit karein immediate online fund transfer se. Failure will result in immediate police raid at your current location."
+                "Security bond deposit karein immediate online fund transfer se. Failure will result in immediate police raid at your current location.",
+                "Aap turant ₹75,000 is official Escrow account par transfer karke verification receipt get karein."
             ]
         }
     ]
@@ -115,7 +121,7 @@ def generate_scam_samples(count: int = 100) -> List[Dict[str, Any]]:
     return samples
 
 
-def generate_legit_samples(count: int = 100) -> List[Dict[str, Any]]:
+def generate_legit_samples(count: int = 250) -> List[Dict[str, Any]]:
     """Generates synthetic legitimate Hinglish conversation samples."""
     legit_phrases = [
         "Hello sir, main HDFC Customer Care se bol raha hu. Main aapko batana chahta hu ki aapki credit card statement generation complete ho gayi hai.",
@@ -132,13 +138,15 @@ def generate_legit_samples(count: int = 100) -> List[Dict[str, Any]]:
         "Aapka electric bill Rs 1450 pay ho gaya hai successfully. Confirmation code: TXN98721.",
         "Arre dost, shaam ko cricket khelne chalna hai kya playground par?",
         "Hello, Flipkart customer support se call hai. Kya aapka issue status resolve hua?",
-        "Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par."
+        "Aapki LIC policy ka premium due date 25th August hai. Online payment link available hai portal par.",
+        "Sir aapka Ola cab booking confirmed hai. Main 2 minute mein pick-up point par pahunch raha hu.",
+        "Bhai laptop repair ho gaya hai, dukaan se aakar collect kar lo.",
+        "Hello Ji, main Reliance Digital se bol raha hu. Aapka TV installation aaj afternoon mein schedule hai."
     ]
 
     samples = []
     for i in range(count):
         text = random.choice(legit_phrases)
-        # Add slight variations for diversity
         if i > len(legit_phrases):
             var_prefix = random.choice(["Hi, ", "Hello, ", "Sunie, ", "Ji, ", ""])
             text = f"{var_prefix}{text}"
@@ -162,8 +170,8 @@ def main():
 
     os.makedirs(output_dir, exist_ok=True)
 
-    scam_samples = generate_scam_samples(count=100)
-    legit_samples = generate_legit_samples(count=100)
+    scam_samples = generate_scam_samples(count=250)
+    legit_samples = generate_legit_samples(count=250)
 
     dataset = scam_samples + legit_samples
     random.shuffle(dataset)

@@ -11,8 +11,8 @@
 
 ## Phase 3: Tri-State ML Detection Engine
 - [x] **Task 6**: Prepare the Multitask MuRIL dataset loader class for scam/non-scam conversations with custom annotations (manipulation triggers, stage progression).
-- [ ] **Task 7**: Define and implement the multi-task model architecture utilizing a shared `google/muril-base-cased` backbone and three task heads (Scam classification, Trigger multi-label sigmoid, Stage progression categorical classification).
-- [ ] **Task 8**: Develop the training and validation script (`train_detector.py`) for the Multitask MuRIL classifier, including early stopping and classification metrics.
+- [x] **Task 7**: Define and implement the multi-task model architecture utilizing a shared `google/muril-base-cased` backbone and three task heads (Scam classification, Trigger multi-label sigmoid, Stage progression categorical classification).
+- [x] **Task 8**: Develop the training and validation script (`train_detector.py`) for the Multitask MuRIL classifier, including early stopping and classification metrics.
 - [ ] **Task 9**: Implement the Tri-State Sliding Context Window logic to classify current dialogue segments into `SAFE`, `UNCERTAIN`, or `FRAUD` based on risk score fusion calculations.
 
 ## Phase 4: Adaptive LLM Honeypot Engine

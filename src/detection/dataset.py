@@ -18,6 +18,8 @@ STAGE_MAP = {
 }
 
 
+import zlib
+
 class DummyTokenizer:
     """
     Fallback Tokenizer for offline or test environments.
@@ -44,7 +46,7 @@ class DummyTokenizer:
         else:
             words = [w for t in text for w in t.split()]
 
-        tokens = [101] + [hash(w) % (self.vocab_size - 2) + 1 for w in words[: max_length - 2]] + [102]
+        tokens = [101] + [(zlib.crc32(w.encode("utf-8")) % (self.vocab_size - 2)) + 1 for w in words[: max_length - 2]] + [102]
         pad_len = max(0, max_length - len(tokens))
         input_ids = tokens + [0] * pad_len
         attention_mask = [1] * len(tokens) + [0] * pad_len
@@ -86,15 +88,17 @@ class MultitaskScamDataset(Dataset):
 
         # Set or load tokenizer
         if isinstance(tokenizer, str):
-            try:
-                self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
-            except Exception as e:
-                logger.warning(f"Could not load AutoTokenizer '{tokenizer}' online ({e}). Attempting local fallback.")
+            if tokenizer == "dummy":
+                self.tokenizer = DummyTokenizer(max_length=max_length)
+            else:
                 try:
                     self.tokenizer = AutoTokenizer.from_pretrained(tokenizer, local_files_only=True)
                 except Exception:
-                    logger.warning(f"Local tokenizer fallback failed. Initializing DummyTokenizer for testing.")
-                    self.tokenizer = DummyTokenizer(max_length=max_length)
+                    try:
+                        self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
+                    except Exception as e:
+                        logger.warning(f"Could not load AutoTokenizer '{tokenizer}' ({e}). Initializing DummyTokenizer.")
+                        self.tokenizer = DummyTokenizer(max_length=max_length)
         else:
             self.tokenizer = tokenizer
 
