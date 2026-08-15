@@ -17,12 +17,12 @@
 
 ## Phase 4: Adaptive LLM Honeypot Engine
 - [x] **Task 10**: Define the LLM client wrapper (supporting Ollama/vLLM for local execution of `Qwen2.5-7B-Instruct`) and draft the system prompt template enforcing victim persona dynamics.
-- [ ] **Task 11**: Implement the Honeypot State Machine to track and transition the synthetic victim through psychological states (`Confused` -> `Frightened` -> `Cooperative` -> `Stalling`).
-- [ ] **Task 12**: Develop the Synthetic Entity Vault to dynamically intercept and swap out real payment coordinates/credentials with pre-generated synthetic decoy data.
+- [x] **Task 11**: Implement the Honeypot State Machine to track and transition the synthetic victim through psychological states (`Confused` -> `Frightened` -> `Cooperative` -> `Stalling`).
+- [x] **Task 12**: Develop the Synthetic Entity Vault to dynamically intercept and swap out real payment coordinates/credentials with pre-generated synthetic decoy data.
 
 ## Phase 5: Zero-Shot Threat Extraction
-- [ ] **Task 13**: Set up GLiNER entity extraction model pipeline to parse text transcripts for custom threat parameters (UPI IDs, phone numbers, fake badge IDs).
-- [ ] **Task 14**: Implement regex-based post-processors to clean up and validate extracted entities (UPI formats, Indian mobile phone patterns, URL endpoints).
+- [x] **Task 13**: Set up GLiNER entity extraction model pipeline to parse text transcripts for custom threat parameters (UPI IDs, phone numbers, fake badge IDs).
+- [x] **Task 14**: Implement regex-based post-processors to clean up and validate extracted entities (UPI formats, Indian mobile phone patterns, URL endpoints).
 
 ## Phase 6: Integration, Server, & Web Dashboard
 - [ ] **Task 15**: Build the main `app.py` FastAPI server integrating WebSocket ASR connection, Tri-State ML evaluation, LLM Honeypot activation, and GLiNER extraction.
