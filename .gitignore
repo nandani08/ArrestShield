@@ -1,0 +1,24 @@
+# Environment variables
+.env
+.env.*
+
+# Project state tracking documents
+CONTEXT.md
+TASKS.md
+
+# Python virtual environment & cache
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyTorch models & heavy checkpoints
+models/*.pt
+!models/.gitkeep
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
