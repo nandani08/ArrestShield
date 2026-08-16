@@ -61,8 +61,14 @@
                                 <span>SYSTEM</span>
                                 <span>INITIALIZED</span>
                             </div>
-                            Ready to intercept conversation turns. Speak into your microphone or click a preset simulation scenario below.
+                            Ready to intercept conversation turns. Speak into your microphone, type a phrase below, or click a preset simulation scenario.
                         </div>
+                    </div>
+
+                    <!-- Manual Text Input Bar for Testing -->
+                    <div style="display: flex; gap: 0.5rem; margin-top: 0.8rem;">
+                        <input type="text" id="manualInputText" placeholder="Type or paste scam sentence (e.g. 'Main Mumbai Police se Officer speak kar raha hu...')" style="flex: 1; padding: 0.65rem 0.9rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); background: rgba(0,0,0,0.3); color: #fff; font-size: 0.85rem;" />
+                        <button class="btn btn-primary" id="btnSendText" style="padding: 0.65rem 1rem; font-size: 0.85rem; whitespace: nowrap;">Analyze & Respond 🚀</button>
                     </div>
                 </div>
             </article>
@@ -217,6 +223,6 @@
     </footer>
 
     <!-- App JavaScript logic -->
-    <script src="/static/app.js"></script>
+    <script src="/static/app.js?v=1.0.2"></script>
 </body>
 </html>

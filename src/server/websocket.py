@@ -88,11 +88,11 @@ class IntegratedPipelineSession:
             len(self.cumulative_extracted_entities[k]) for k in ["upi_ids", "phone_numbers", "urls", "police_badge_ids", "case_ids", "claimed_agencies"]
         )
 
-        # 3. Adaptive LLM Honeypot Activation
-        is_fraud = (detection_result["state"] == "FRAUD")
+        # 3. Adaptive LLM Honeypot Activation (Activates on UNCERTAIN or FRAUD)
+        is_suspicious = (detection_result["state"] in ["FRAUD", "UNCERTAIN"] or detection_result["risk_score"] >= 0.40)
         honeypot_payload = {"active": False}
 
-        if is_fraud or self.honeypot_machine.turn_count > 0:
+        if is_suspicious or self.honeypot_machine.turn_count > 0:
             decoy_context = self.entity_vault.get_decoy_context_string()
             honeypot_turn = self.honeypot_machine.generate_honeypot_turn(
                 scammer_input=transcript_text,
@@ -147,7 +147,7 @@ async def websocket_asr_endpoint(websocket: WebSocket):
                 asr_results = session.asr_processor.process_audio_chunk(binary_chunk)
 
                 for asr_item in asr_results:
-                    if asr_item.get("type") == "transcript_chunk":
+                    if asr_item.get("type") in ["transcript", "transcript_chunk"]:
                         transcript_text = asr_item.get("text", "")
                         timestamp_ms = asr_item.get("timestamp_ms", 0)
                         
@@ -176,7 +176,7 @@ async def websocket_asr_endpoint(websocket: WebSocket):
                     elif action == "flush":
                         flush_results = session.asr_processor.flush()
                         for asr_item in flush_results:
-                            if asr_item.get("type") == "transcript_chunk":
+                            if asr_item.get("type") in ["transcript", "transcript_chunk"]:
                                 transcript_text = asr_item.get("text", "")
                                 analysis_payload = session.process_text_turn(transcript_text)
                                 await websocket.send_json(analysis_payload)

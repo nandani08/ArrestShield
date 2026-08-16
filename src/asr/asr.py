@@ -1,7 +1,10 @@
+import logging
 import numpy as np
 import torch
 from faster_whisper import WhisperModel
 from typing import Dict, Any, List, Tuple, Optional
+
+logger = logging.getLogger("ArrestShield.ASR")
 
 class HinglishTranscriber:
     """
@@ -37,7 +40,11 @@ class HinglishTranscriber:
                 compute_type=self.compute_type
             )
         except Exception as e:
-            raise RuntimeError(f"Failed to load Whisper model '{self.model_name}': {e}")
+            logger.warning(f"Could not load primary model '{self.model_name}' ({e}). Falling back to 'tiny' Whisper model...")
+            try:
+                self.model = WhisperModel("tiny", device=self.device, compute_type=self.compute_type)
+            except Exception as ex:
+                raise RuntimeError(f"Failed to load Whisper model: {ex}")
             
     def transcribe(
         self,
@@ -93,10 +100,9 @@ class HinglishTranscriber:
 class DummyHinglishTranscriber:
     """
     Fallback Transcriber for offline or test environments.
-    Simulates speech recognition without requiring model downloads.
     """
     def __init__(self, *args, **kwargs):
         pass
 
     def transcribe(self, audio: np.ndarray, **kwargs) -> Tuple[str, List[Dict[str, Any]]]:
-        return "Simulated ASR transcription.", [{"start": 0.0, "end": 1.0, "text": "Simulated ASR transcription.", "probability": 0.99}]
+        return "", []

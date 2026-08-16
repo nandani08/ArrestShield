@@ -140,8 +140,8 @@ function renderAnalysisTurn(data) {
     }
 
     // 3. Render Honeypot Victim Response
-    if (data.honeypot && data.honeypot.active) {
-        const state = (data.honeypot.state || 'active').toUpperCase();
+    if (data.honeypot && (data.honeypot.active || data.honeypot.victim_response)) {
+        const state = (data.honeypot.state || 'ACTIVE').toUpperCase();
         honeypotStatePill.innerText = state;
         honeypotStatePill.className = `state-pill state-fraud`;
 
@@ -151,6 +151,7 @@ function renderAnalysisTurn(data) {
 
         if (data.honeypot.victim_response) {
             appendChatBubble('VICTIM PERSONA (HONEYPOT)', data.honeypot.victim_response, 'chat-victim');
+            speakTextAloud(data.honeypot.victim_response);
         }
     }
 
@@ -174,12 +175,20 @@ function appendChatBubble(speaker, text, cssClass) {
     div.className = `chat-bubble ${cssClass}`;
 
     const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    
+    let playVoiceBtn = '';
+    if (cssClass.includes('chat-victim')) {
+        const escapedText = text.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        playVoiceBtn = `<button class="btn btn-secondary" onclick="speakTextAloud('${escapedText}')" style="font-size: 0.75rem; padding: 0.25rem 0.6rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.3rem; cursor: pointer; border-radius: 4px;">🔊 Listen Voice Response</button>`;
+    }
+
     div.innerHTML = `
         <div class="speaker-label">
             <span>${speaker}</span>
             <span>${timestamp}</span>
         </div>
         <div>${text}</div>
+        ${playVoiceBtn}
     `;
 
     transcriptContainer.appendChild(div);
@@ -225,7 +234,43 @@ function renderThreatCards(threats) {
     threatCountBadge.innerText = `${totalCount} Indicators`;
 }
 
-// Microphone Streaming via Web Audio API
+// Microphone Streaming & Real-Time Speech Recognition
+let speechRec = null;
+
+function setupBrowserSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        console.warn("Browser SpeechRecognition API not supported on this browser.");
+        return null;
+    }
+    const rec = new SpeechRecognition();
+    rec.continuous = true;
+    rec.interimResults = true;
+    rec.lang = 'hi-IN';
+
+    rec.onresult = (event) => {
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+            const text = event.results[i][0].transcript.trim();
+            if (text && event.results[i].isFinal) {
+                console.log("Real spoken mic input:", text);
+                processScenarioText(text);
+            }
+        }
+    };
+
+    rec.onerror = (e) => {
+        console.warn("SpeechRecognition error:", e);
+    };
+
+    rec.onend = () => {
+        if (isStreaming && speechRec) {
+            try { speechRec.start(); } catch (err) {}
+        }
+    };
+
+    return rec;
+}
+
 async function toggleMicrophoneStream() {
     if (isStreaming) {
         stopMicrophoneStream();
@@ -246,7 +291,6 @@ async function startMicrophoneStream() {
             if (!isStreaming || ws.readyState !== WebSocket.OPEN) return;
             const inputData = e.inputBuffer.getChannelData(0);
             
-            // Convert Float32Array [-1.0, 1.0] to Int16 PCM bytes
             const pcmBuffer = new Int16Array(inputData.length);
             for (let i = 0; i < inputData.length; i++) {
                 const s = Math.max(-1, Math.min(1, inputData[i]));
@@ -260,11 +304,17 @@ async function startMicrophoneStream() {
         source.connect(scriptNode);
         scriptNode.connect(audioContext.destination);
 
+        // Start browser-native Speech Recognition for exact spoken mic input
+        speechRec = setupBrowserSpeechRecognition();
+        if (speechRec) {
+            try { speechRec.start(); } catch (err) {}
+        }
+
         isStreaming = true;
         micBtnLabel.innerText = 'Stop Mic Stream';
         btnToggleMic.className = 'btn btn-danger';
         micIcon.innerText = '⏹️';
-        statusText.innerText = 'Streaming Audio';
+        statusText.innerText = 'Streaming Audio & Mic Speech';
     } catch (e) {
         alert('Could not access microphone: ' + e.message);
     }
@@ -275,6 +325,11 @@ function stopMicrophoneStream() {
     if (scriptNode) scriptNode.disconnect();
     if (mediaStream) mediaStream.getTracks().forEach(t => t.stop());
     if (audioContext) audioContext.close();
+
+    if (speechRec) {
+        try { speechRec.stop(); } catch (err) {}
+        speechRec = null;
+    }
 
     micBtnLabel.innerText = 'Start Mic Stream';
     btnToggleMic.className = 'btn btn-primary';
@@ -350,20 +405,35 @@ function drawWaveform(samples) {
 
 // Preset Scenario Simulation Handler
 async function simulatePreset(presetType) {
+    // Prime TTS on user click gesture to bypass browser autoplay policy
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance(''));
+    }
+
     let scenarioText = "";
     if (presetType === 'arrest') {
-        scenarioText = "Main Mumbai Police Cyber Cell se Officer Sharma speak kar raha hu (Badge #MH-4912). Case #CR-2024-8842 register hua hai. Urgent Payment UPI `rbi.verify@okicici` par transfer karo or 9876543210 call karo.";
+        scenarioText = "Main Mumbai Police Cyber Cell se Officer Sharma speak kar raha hu (Badge #MH-4912). Case #CR-2024-8842 register hua hai. Urgent Payment UPI rbi.verify@okicici par transfer karo or call 9876543210 immediately.";
     } else if (presetType === 'upi') {
-        scenarioText = "Aapka TRAI mobile number disconnect ho jayega. Immediate penalty clearance pay karo UPI `cbi.clearance@paytm` par.";
+        scenarioText = "Aapka TRAI mobile number disconnect ho jayega. Immediate penalty clearance pay karo UPI cbi.clearance@paytm par.";
     } else {
         scenarioText = "Namaste beta! Main Sharma uncle bol raha hu. Gher par sab kaise hain?";
+    }
+
+    await processScenarioText(scenarioText);
+}
+
+async function processScenarioText(text) {
+    if (!text || !text.trim()) return;
+
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance(''));
     }
 
     try {
         const response = await fetch('/api/analyze_text', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: scenarioText, reset_session: false })
+            body: JSON.stringify({ text: text.trim(), reset_session: false })
         });
 
         if (response.ok) {
@@ -374,3 +444,62 @@ async function simulatePreset(presetType) {
         console.error('Simulation error:', e);
     }
 }
+
+// Text-to-Speech (TTS) Voice Playback for Victim Persona
+let isTTSEnabled = true;
+
+function speakTextAloud(text) {
+    if (!isTTSEnabled || !('speechSynthesis' in window) || !text) return;
+    try {
+        window.speechSynthesis.cancel(); // Cancel previous speech
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.95; // Realistic human pace
+        utterance.pitch = 1.0;
+        
+        const voices = window.speechSynthesis.getVoices();
+        const selectedVoice = voices.find(v => v.lang.includes('en-IN') || v.lang.includes('hi-IN') || v.lang.includes('en'));
+        if (selectedVoice) {
+            utterance.voice = selectedVoice;
+        }
+        
+        window.speechSynthesis.speak(utterance);
+    } catch (e) {
+        console.warn('TTS playback error:', e);
+    }
+}
+
+// Event Listeners for Manual Text Input & Global Window Exports
+function attachInputListeners() {
+    const btnSendText = document.getElementById('btnSendText');
+    const manualInputText = document.getElementById('manualInputText');
+
+    if (btnSendText && manualInputText) {
+        btnSendText.onclick = () => {
+            const val = manualInputText.value;
+            if (val) {
+                processScenarioText(val);
+                manualInputText.value = '';
+            }
+        };
+
+        manualInputText.onkeypress = (e) => {
+            if (e.key === 'Enter') {
+                const val = manualInputText.value;
+                if (val) {
+                    processScenarioText(val);
+                    manualInputText.value = '';
+                }
+            }
+        };
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachInputListeners);
+} else {
+    attachInputListeners();
+}
+
+window.simulatePreset = simulatePreset;
+window.processScenarioText = processScenarioText;
+window.speakTextAloud = speakTextAloud;
